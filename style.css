@@ -1,0 +1,253 @@
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('Fonts/Inconsolata-Regular.ttf');
+}
+@font-face {
+  font-family: 'NunitoSemiBold';
+  src: url('Fonts/Nunito-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'NunitoBold';
+  src: url('Fonts/Nunito-Bold.ttf');
+}
+
+html, body{
+  margin: 0;
+  font-family: "NunitoSemiBold";
+}
+
+.map{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+*{
+  cursor: default !important;
+}
+
+.leaflet-marker-icon{
+  cursor: pointer !important;
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip{
+  background-color: 2B2B2B;
+  color: white;
+}
+
+.popup-background{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.popup{
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2B2B2B;
+  z-index: 1001;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.tab-efficiency{
+  display: none;
+}
+
+.tab-hardware{
+  display: none;
+}
+
+.tab-title{
+  display: inline-block;
+}
+
+.input-wrapper{
+  margin-top: 10px;
+}
+
+.input-input{
+  width: 100%;
+  border: none;
+  background-color: #464646;
+  color: #ffffff;
+  font-family: "NunitoSemiBold";
+  font-size: 15px;
+  padding: 5px 8px;
+}
+
+.tab-titles{
+  margin-bottom: 23px;
+  user-select: none;
+}
+
+.tab-title{
+  background-color: #a2a2a2;
+  width: 85px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0px;
+}
+
+.tab-title-general{
+  background-color: #0055ff;
+}
+
+.tab-title-efficiency{
+  background-color: #464646;
+}
+
+.tab-title-hardware{
+  background-color: #464646;
+}
+
+.tab{
+  height: 248px;
+  overflow: scroll;
+}
+
+#photo{
+  display: inline-block;
+  width: 144px;
+  vertical-align: top;
+}
+
+.image-viewer{
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  vertical-align: top;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+}
+
+.image-delete{
+  height: 28px;
+  padding: 0 !important;
+  line-height: 28px;
+  display: inline-block;
+  vertical-align: top;
+  width: 80px !important;
+  margin: 0 !important;
+  background-color: #ee1b1b !important;
+}
+
+.image-delete:active{
+  background-color: #0055ff !important;
+}
+
+.button-wrapper{
+  text-align: center;
+  user-select: none;
+}
+
+.button{
+  display: inline-block;
+  background-color: #464646;
+  width: 100px;
+  border-radius: 5px;
+  padding: 5px 0px;
+  margin-top: 20px;
+  text-align: center;
+  user-select: none;
+}
+
+.button:active{
+  background-color: #0055ff;
+}
+
+.button-cancel{
+  margin-right: 10px;
+}
+
+.button-delete{
+  width: 215px;
+  margin: 0 auto;
+  margin-top: 15px;
+  background-color: #ee1b1b;
+  display: block;
+}
+
+.login-page{
+  background-color: #2B2B2B;
+  color: #ffffff;
+  text-align: center;
+}
+
+.login-title{
+  font-size: 40px;
+  font-family: "NunitoBold";
+  margin-bottom: 50px;
+  white-space: nowrap;
+}
+
+.login-attempts{
+  font-size: 25px;
+  font-family: "NunitoBold";
+  margin-bottom: 15px;
+  white-space: nowrap;
+}
+
+.login-form{
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+
+.login-label{
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: left;
+  margin-left: 100px;
+}
+
+.login-input{
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.login-button{
+  font-family: "NunitoSemiBold";
+  color: #ffffff;
+  background-color: #464646;
+  height: 32px;
+  width: 100px;
+  border: none;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 15px;
+  outline: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.block-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.block-info{
+  font-size: 30px;
+}
+
+.block-red{
+  font-size: 45px;
+  color: #ee1b1b;
+}
